@@ -23,3 +23,9 @@
   font-size: 40px;
   color: black;
 }
+
+.project_name-background {
+  background-color: #33475b; 
+  border-radius: 20px;
+  padding: 5px;
+}

@@ -3,49 +3,51 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+.right_side_box {
+	display: flex;
+	flex-direction: column;
+}
+
 .project_box {
   position: relative;
   text-align: center;
   color: white;
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-right: 10px; /* Add margin between project boxes */
+
 }
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+.section_box_container {
+  overflow-x: auto; /* Add this to enable horizontal scrolling for the container */
 }
 
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
+.section_box {
+  position: relative;
+  background-color: green;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+  display: flex;  /* Add this to make the project boxes inside section_box appear in a row */
+  justify-content: space-between;  /* Adjust this based on your layout requirements */
+  flex-direction: row; /* Ensure project boxes stack vertically */
+  overflow-x: auto;
 }
 
 .centered {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
+  position: absolute;
 }
 
 .centered-below {
-  position: absolute;
+ position:absolute;
   top: 120%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -66,6 +68,10 @@
      <p> This is my unofficial portfolio page.</p>
     <a href="about.html"><button>About Page!</button></a>
     <hr>
+    <div class="right_side_box">
+    
+     <div class="section_box_container">
+<div class="section_box"> 
 
 <div class="project_box">
   <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
@@ -84,7 +90,32 @@
   <div class="centered-below ">Construction</div>
 </div>
 
+ </div>
+ 
+ </div>
+ <div class="section_box_container">
+ <div class="section_box"> 
 
+<div class="project_box">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  <div class="centered">Construction</div>
+</div>
 
+<div class="project_box">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%" >
+
+  <div class="centered project_name-background ">Construction</div>
+  
+</div>
+
+<div class="project_box">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  <div class="centered-below ">Construction</div>
+</div>
+
+ </div>
+ </div>
+ </div>
+ 
 </body>
 </html> 

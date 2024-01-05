@@ -1,22 +1,45 @@
+.right_side_box {
+	display: flex;
+	flex-direction: column;
+}
+
 .project_box {
   position: relative;
   text-align: center;
   color: white;
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-right: 10px; 
+}
+
+.section_box_container {
+  overflow-x: auto; 
+}
+
+.section_box {
+  position: relative;
+  background-color: green;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+  display: flex;  
+  justify-content: space-between; 
+  flex-direction: row; 
 }
 
 .centered {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
+  position: absolute;
 }
 
 .centered-below {
-  position: absolute;
+ position:absolute;
   top: 120%;
   left: 50%;
   transform: translate(-50%, -50%);

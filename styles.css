@@ -1,6 +1,6 @@
 .right_side_box {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .project_box {
@@ -51,4 +51,18 @@
   background-color: #33475b; 
   border-radius: 20px;
   padding: 5px;
+}
+
+.section_box_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.section_box_container::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.section_box_container::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 10px;
 }

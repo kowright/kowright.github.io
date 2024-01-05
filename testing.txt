@@ -9,19 +9,8 @@
 	flex-direction: column;
 }
 
-.project_box {
-  position: relative;
-  text-align: center;
-  color: white;
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-right: 10px; /* Add margin between project boxes */
-
-}
-
 .section_box_container {
-  overflow-x: auto; /* Add this to enable horizontal scrolling for the container */
+  overflow-x: auto;
 }
 
 .section_box {
@@ -29,13 +18,14 @@
   background-color: green;
   margin-bottom: 20px;
   margin-top: 20px;
-  width: 100%;
+  width: auto;
   height: auto;
   padding: 20px 20px 20px 20px;
-  display: flex;  /* Add this to make the project boxes inside section_box appear in a row */
-  justify-content: space-between;  /* Adjust this based on your layout requirements */
-  flex-direction: row; /* Ensure project boxes stack vertically */
+  display: flex; 
+  flex-direction: row;
   overflow-x: auto;
+  gap: 10px;
+
 }
 
 .centered {
@@ -46,20 +36,52 @@
   position: absolute;
 }
 
-.centered-below {
- position:absolute;
-  top: 120%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: black;
+.just-a-box{
+width: 1000px;
+height: 700px;
+background-color:pink;
+box-sizing: border-box;
+ flex: 0 0 auto;
+ display:flex;
+ 
 }
 
-.project_name-background {
-  background-color: #33475b; 
-  border-radius: 20px;
-  padding: 5px;
+.project-box-image{
+width: 60%;
+background-color: blue;
+margin: 20px;
+  border-radius: 10px;
+
 }
+
+.project-box-content {
+width:40%;
+background-color: orange;
+margin: 20px;
+  border-radius: 10px;
+
+}
+
+.project-box-text {
+ font-size: 16px;
+ margin: 10px;
+}
+
+.project-box-title {
+font-size: 24px;
+ margin: 10px;
+ text-align:center;
+ font-weight: bold;
+}
+
+.project-box-button {
+width: 50%;
+height: 5%;
+  transform: translateX(50%);
+   border-radius: 10px;
+}
+
+
 </style>
 </head>
 <body>
@@ -71,50 +93,44 @@
     <div class="right_side_box">
     
      <div class="section_box_container">
+     
 <div class="section_box"> 
 
-<div class="project_box">
-  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  <div class="centered">Construction</div>
+<div class="just-a-box"> 
+	<div class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-content">
+    </div>
+	<div class="project-box-content"> 
+    	<div class="project-box-title">Construction Tour VR!</div>
+    	<div class="project-box-text">This is words about this wonderful project, oh wow, click it now!! </div>
+            <a href="about.html"><button class="project-box-button">Go to Project Page!</button></a>
+       
+    </div>
 </div>
 
-<div class="project_box">
-  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%" >
-
-  <div class="centered project_name-background ">Construction</div>
-  
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
+<div class="just-a-box"> </div>
 </div>
 
-<div class="project_box">
-  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  <div class="centered-below ">Construction</div>
-</div>
 
  </div>
- 
- </div>
- <div class="section_box_container">
- <div class="section_box"> 
 
-<div class="project_box">
-  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  <div class="centered">Construction</div>
-</div>
-
-<div class="project_box">
-  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%" >
-
-  <div class="centered project_name-background ">Construction</div>
-  
-</div>
-
-<div class="project_box">
-  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  <div class="centered-below ">Construction</div>
-</div>
-
- </div>
- </div>
  </div>
  
 </body>

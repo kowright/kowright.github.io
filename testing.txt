@@ -142,18 +142,112 @@ height: 5%;
 /* home page */
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-        .page-underline {
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #D1E877;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:  #D1E877;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slideshow-image {
+width:100%;
+border-radius: 10px;
+}
+
+ .page-underline {
             display: none;
             background-color: white;
         }
 
         .home-custom-button:hover .page-underline {
-            color: red;
             display: block;
         }
 
@@ -168,69 +262,153 @@ height: 5%;
             text-decoration: none;
             color: inherit;
         }
-        
+
         .home-my-name {
             font-family: Georgia, serif;
-            font-size: 50px;
-            transform: translateX(5%);
+            font-size: 70px;
+            transform: translateX(10%);
             font-weight: bold;
+            color:white;
+            margin: 0; 
         }
         
         .home-my-title {
             font-family: Georgia, serif;
             font-size: 30px;
-            transform: translateX(5%);
+            transform: translateX(10%);
         }
         
         .home-big-picture {
-            width: 50%;
+            width: 33%;
             float: right;
+	    transform: translateX(-50%);
         }
         
         .home-corner-picture {
-        	width:20%;
+        	width: 50px;
             height:auto; 
             float:left;
+		margin-bottom: 10px;
         }
-    </style>
+
+</style>
 </head>
-<body style="background-color:rgba(118, 96, 138, 255);">
-    <div>
+<body style="background-color:rgba(118, 96, 138, 255); ">
+
+ <div>
         <a href="home.html">
-            <img src="img_snow_wide.jpg" alt="Snow" class="home-corner-picture">
+            <img src="portfolioimage.png" class="home-corner-picture">
         </a>
 
         <div style="float:right">
-            <div class="home-custom-button">
-                <hr class="page-underline">
-                <a href="home.html">Home<hr class="page-underline"></a>
-            </div>
+               
+            <a href="home.html">
+                   <div class="home-custom-button">
+                     Home<hr class="page-underline">
+                   </div>
+            </a>
+               
+               <a href="index.html">
+                   <div class="home-custom-button">
+                      Projects
+                     <hr class="page-underline">
+                   </div>
+               </a>
 
-            <div class="home-custom-button">
-                <hr class="page-underline">
-                <a href="index.html">Projects<hr class="page-underline"></a>
-            </div>
+                <a href="contact.html">
+                   <div class="home-custom-button">
+                      Contact
+                      <hr class="page-underline">
+                   </div>
+               </a>
 
-            <div class="home-custom-button">
-                <hr class="page-underline">
-                <a href="contact.html">Contact<hr class="page-underline"></a>
-            </div>
-            
-            <div class="home-custom-button">
-                <hr class="page-underline">
-                <a href="about.html">About<hr class="page-underline"></a>
-            </div>
+                <a href="about.html">
+                   <div class="home-custom-button">
+                      About
+                     <hr class="page-underline">
+                   </div>
+               </a>
+               
         </div>
     </div>
 
     <hr style="clear:both;">
+    
+    <div style="display:flex; margin-top:10%;">
+ 
+    <div style="width: 40%; margin-top: 20px;">
+        <p class="home-my-title">Welcome to my <span style="color:#F2DC7F;font-weight: bold;
+">portfolio!</span></p>
+        <p class="home-my-title" style="font-size:20px;">My name is </p>
+    	<p class="home-my-name">Kortney Wright </p>
+    	<p class="home-my-title" style="font-size:20px;">and I'm a Software Engineer! </p>
+	</div>
 
-    <img src="img_snow_wide.jpg" alt="Snow" class="home-big-picture">
-    <p class="home-my-name">Kortney Wright </p>
-    <p class="home-my-title">Software Engineer </p>
+
+<div style="float:right;">
+<div class="slideshow-container">
+<p style="text-align:center; color:#F2DC7F;"> Fun things about me </p>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_snow_wide.jpg" class="slideshow-image">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="portfolioimage.png"class="slideshow-image">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+      <iframe  class="slideshow-image" src="https://drive.google.com/file/d/1CJEGAyhiPyY6G0yw09QpnKrFlglDzxVA/preview" width="640" height="480" allow="autoplay"></iframe>
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</div>
+
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
-</html>
-
-
-
-
+</html> 

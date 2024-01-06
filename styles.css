@@ -37,6 +37,7 @@ box-sizing: border-box;
 flex: 0 0 auto;
 display:flex;
 transform: translateX(50%);
+	background-color: pink;
 }
 
 .project-box-image{

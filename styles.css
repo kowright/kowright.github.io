@@ -1,3 +1,4 @@
+/* Index or projects page */
 .right_side_box {
 	display: flex;
 	flex-direction: column;
@@ -85,3 +86,56 @@ height: 5%;
   background-color: #eee;
   border-radius: 10px;
 }
+
+/* HOME PAGE */
+
+ .page-underline {
+            display: none;
+            background-color: white;
+        }
+
+        .home-custom-button:hover .page-underline {
+            color: red;
+            display: block;
+        }
+
+        .home-custom-button {
+            background-color: transparent;
+            display: inline-block;
+            margin-right: 40px;
+            color: white;
+        }
+
+        .home-custom-button a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .home-my-name {
+            font-family: Georgia, serif;
+            font-size: 50px;
+            transform: translateX(5%);
+            font-weight: bold;
+        }
+        
+        .home-my-title {
+            font-family: Georgia, serif;
+            font-size: 30px;
+            transform: translateX(5%);
+        }
+        
+        .home-big-picture {
+            width: 50%;
+            float: right;
+        }
+        
+        .home-corner-picture {
+        	width:20%;
+            height:auto; 
+            float:left;
+        }
+
+
+
+
+

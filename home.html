@@ -5,7 +5,7 @@
        <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body style="background-color:rgba(118, 96, 138, 255);">
-    <div>
+   <div>
         <a href="home.html">
             <img src="portfolioimage.png" class="home-corner-picture">
         </a>
@@ -43,10 +43,84 @@
     </div>
 
     <hr style="clear:both;">
+    
+    <div style="display:flex; margin-top:10%;">
+ 
+    <div style="width: 40%; margin-top: 20px;">
+        <p class="home-my-title">Welcome to my <span style="color:#F2DC7F;font-weight: bold;
+">portfolio!</span></p>
+        <p class="home-my-title" style="font-size:20px;">My name is </p>
+    	<p class="home-my-name">Kortney Wright </p>
+    	<p class="home-my-title" style="font-size:20px;">and I'm a Software Engineer! </p>
+	</div>
 
-    <img src="portfolioimage.png" class="home-big-picture">
-           <p class="home-my-title">Welcome! My name is </p>
-    <p class="home-my-name">Kortney Wright </p>
-    <p class="home-my-title">and I'm a Software Engineer! </p>
+
+<div style="float:right;">
+<div class="slideshow-container">
+<p style="text-align:center; color:#F2DC7F;"> Fun things about me </p>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_snow_wide.jpg" class="slideshow-image">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="portfolioimage.png"class="slideshow-image">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+      <iframe  class="slideshow-image" src="https://drive.google.com/file/d/1CJEGAyhiPyY6G0yw09QpnKrFlglDzxVA/preview" width="640" height="480" allow="autoplay"></iframe>
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</div>
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+       
 </body>
 </html> 

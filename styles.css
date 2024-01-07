@@ -18,8 +18,8 @@
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.project-prev,
+.project-next {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -35,14 +35,14 @@
 }
 
 /* Position the "next button" to the right */
-.next {
+.project-next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.project-prev:hover,
+.project-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 

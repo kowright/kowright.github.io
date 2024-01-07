@@ -4,8 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
-<body style="background-color:rgba(118, 96, 138, 255);">
-    <div>
+<body style="background-color:rgba(118, 96, 138, 255); ">
+
+ <div>
         <a href="home.html">
             <img src="portfolioimage.png" class="home-corner-picture">
         </a>
@@ -43,14 +44,46 @@
     </div>
 
     <hr style="clear:both;">
-
-    <div class="right_side_box">
     
-     <div class="section_box_container">
-     
-<div class="section_box"> 
 
-<div class="just-a-box"> 
+<h1 style="text-align:center" class= "page-title">Projects</h1>
+
+
+<br>
+
+ 
+ 
+<h3 style="text-align:center; color:#D1E877;">Software Projects</h3>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    
+       <div class="just-a-box"> 
+	<div class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-content">
+    </div>
+	<div class="project-box-content"> 
+    	<div class="project-box-title">Minimap!</div>
+    	<div class="project-box-text">This is words about this wonderful project, oh wow, click it now!! </div>
+            <a href="about.html"><button class="project-box-button">Go to Project Page!</button></a>
+       
+    </div>
+    </div>
+
+    
+  </div>
+  
+  
+  
+  
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+
+    
+       <div class="just-a-box"> 
 	<div class="project-box-image">
       <img src="img_snow_wide.jpg" alt="Snow" class="project-box-image">
       <img src="img_snow_wide.jpg" alt="Snow" class="project-box-content">
@@ -61,33 +94,187 @@
             <a href="about.html"><button class="project-box-button">Go to Project Page!</button></a>
        
     </div>
+    </div>
+
+
 </div>
 
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
-<div class="just-a-box"> </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    
+           <div class="just-a-box"> 
+	<div class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-content">
+    </div>
+	<div class="project-box-content"> 
+    	<div class="project-box-title">Industrial AR Visualization!</div>
+    	<div class="project-box-text">This is words about this wonderful project, oh wow, click it now!! </div>
+            <a href="about.html"><button class="project-box-button">Go to Project Page!</button></a>
+       
+    </div>
+    </div>
+    
+    </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+  
+         <div class="just-a-box"> 
+	<div class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-content">
+    </div>
+	<div class="project-box-content"> 
+    	<div class="project-box-title">ASP.NET!</div>
+    	<div class="project-box-text">This is words about this wonderful project, oh wow, click it now!! </div>
+            <a href="about.html"><button class="project-box-button">Go to Project Page!</button></a>
+       
+    </div>
+    </div>
+  
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    
+           <div class="just-a-box"> 
+	<div class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-image">
+      <img src="img_snow_wide.jpg" alt="Snow" class="project-box-content">
+    </div>
+	<div class="project-box-content"> 
+    	<div class="project-box-title">SOMETHING ELSE!</div>
+    	<div class="project-box-text">This is words about this wonderful project, oh wow, click it now!! </div>
+            <a href="about.html"><button class="project-box-button">Go to Project Page!</button></a>
+       
+    </div>
+    </div>
+    
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="portfolioimage.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="porfolioimage.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+  </div>
 </div>
 
 
- </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4 style="text-align:center">Not Software Projects</h4>
 
- </div>
- 
+<div class="container2">
+  <div class="mySlides2">
+    <div class="numbertext">1 / 6</div>
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides2">
+    <div class="numbertext">2 / 6</div>
+    <img src="portfolioimage.png" style="width:100%">
+  </div>
+  
+ <a class="prev" onclick="plusSlides2(-1)">❮</a>
+  <a class="next" onclick="plusSlides2(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption2"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo2 cursor2" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide2(1)" alt="Another Image">
+    </div>
+    <div class="column">
+      <img class="demo2 cursor2" src="portfolioimage.png" style="width:100%" onclick="currentSlide2(2)" alt="Another Image 2">
+    </div>
+  </div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides2 = document.getElementsByClassName("mySlides2");
+  let dots2 = document.getElementsByClassName("demo2");
+  let captionText2 = document.getElementById("caption2");
+  if (n > slides2.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";
+  }
+  for (i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" active2", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";
+  dots2[slideIndex2-1].className += " active2";
+  captionText2.innerHTML = dots2[slideIndex2-1].alt;
+}
+
+
+</script>
 	
 
 </body>

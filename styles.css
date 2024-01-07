@@ -1,42 +1,11 @@
 /* Index or projects page */
-.right_side_box {
-	display: flex;
-	flex-direction: column;
-}
-
-.section_box_container {
-  overflow-x: auto;
-}
-
-.section_box {
-  position: relative;
-  background-color: green;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: auto;
-  height: auto;
-  padding: 20px 20px 20px 20px;
-  display: flex; 
-  flex-direction: row;
-  overflow-x: auto;
-  gap: 25%;
-}
-
-.centered {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  position: absolute;
-}
 
 .just-a-box{
-    width: 750px;
+    width: auto;
     height: 500px;
 box-sizing: border-box;
 flex: 0 0 auto;
 display:flex;
-transform: translateX(50%);
 	background-color: pink;
 }
 
@@ -71,20 +40,6 @@ width: 50%;
 height: 5%;
   transform: translateX(50%);
    border-radius: 10px;
-}
-
-.section_box_container::-webkit-scrollbar {
-  width: 12px;
-}
-
-.section_box_container::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border-radius: 10px;
-}
-
-.section_box_container::-webkit-scrollbar-track {
-  background-color: #eee;
-  border-radius: 10px;
 }
 
 /* HOME PAGE */
